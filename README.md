@@ -9,12 +9,17 @@ npm i
 npx web-ext run
 ```
 To inspect add-on:
+
 Go to about:debugging
+
 Click "this firefox"
+
 Click "inspect" next to the add-on
 
 ## Installation
 
 Go to about:debugging
+
 Click "this firefox"
+
 Enable the extension
