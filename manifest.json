@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "JSONResume LinkedIn Experience Exporter",
+  "version": "1.0",
+  "description": "Export experience on linkedin experience page to JSON resume.",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "sidebar_action": {
+    "default_panel": "sidebar/sidebar.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.linkedin.com/in/*/details/experience*"
+      ],
+      "js": [
+        "content_script.js"
+      ]
+    }
+  ]
+}
